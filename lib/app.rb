@@ -14,5 +14,7 @@ get '/not_secret' do
 end
 
 get '/cat' do
+  @random_name = ["Amigo", "Oscar", "Viking", "Felix", "Top Cat", "Snowball"].sample
   erb(:index)
 end
+
